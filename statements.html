@@ -1,0 +1,50 @@
+<html>
+<body>
+<h1>JavaScript statements</h1>
+<ul>
+<li><p>A <b>JavaScript program</b> is a list of <b>statements</b> to be executed by a computer.</p></li>
+<li><p>JavaScript statements are separated by semicolons.</p></li>
+<li><p>
+The best place to break a code line is after an operator or a comma.
+</p></li>
+<hr>
+<hr>
+<p id="add"></p>
+<script>
+var x, y, z; 
+x = 5;        
+y = 7;        
+z = x + y;    
+document.getElementById("add").innerHTML =
+"The value of z is " + z + ".";  
+</script>
+<hr>
+<h2>In HTML, JavaScript statements are executed by the browser.</h2>
+<p id="dol"></p>
+<script>
+document.getElementById("dol").innerHTML = "Hello Divya.";
+</script>
+<hr>
+<h2>Multiple statements on one line is allowed.</h2>
+<p id="demo4"></p>
+<script>
+var d, e, f;
+d = 5; e = 6; f = d + e;
+document.getElementById("demo4").innerHTML = f;
+</script>
+<hr>
+<h2>JavaScript code blocks are written between { and }</h2>
+<button type="button" onclick="Function()">Click Me!</button>
+<p id="demo2"></p>
+<p id="demo3"></p>
+
+<script>
+function Function() {
+  document.getElementById("demo2").innerHTML = "Hello Divya!";
+  document.getElementById("demo3").innerHTML = "How are you?";
+}
+</script>
+
+
+</body>
+</html>
