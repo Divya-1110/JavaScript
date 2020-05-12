@@ -1,0 +1,42 @@
+<html>
+<body>
+<h2>My First JavaScript</h2>
+<p id="divya"></p>
+
+<button type="button"
+onclick="document.getElementById('divya').innerHTML = Date()">
+Click me to display Date and Time.</button>
+<hr>
+<h2>What can javaScript do?</h2>
+<p id="demo">javascript can change the content of html</p>
+<button type="button" 
+onclick='document.getElementById("demo").innerHTML = "HELLO WORLD"'>CLICK ME</button>
+<p id="dem">javascript can change the content of html</p>
+<button type="button" 
+onclick="document.getElementById('dem').innerHTML = 'this is divya'">CLICK </button>
+<hr>
+<p>JavaScript can change HTML attribute values.</p>
+
+<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<button onclick="document.getElementById('myImage').src='smile.gif'">smiley</button>
+
+<img id="myImage" src="cry.gif" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='cry.gif'">cried</button>
+<hr>
+<p id="den">javascript changes  the style of html content.</p>
+<button type="button" onclick = 'document.getElementById("den").style.fontSize="44px"'>click</button>
+<hr>
+<p id="ram">Javascript can hide the HTML elements.</p>
+
+<button type="button" onclick="document.getElementById('ram').style.display='none'">Click Me</button>
+<br><br>
+<p id="rams" style="display:none">welcome to javascript</p>
+<p>Javascript can show the hideen HTML elements.</p>
+
+<button type="button" onclick="document.getElementById('rams').style.display='block'">Click Me!</button>
+
+
+</body>
+</html> 
