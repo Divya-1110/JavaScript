@@ -1,0 +1,118 @@
+<html>
+<body>
+<h1>javascript datatypes</h1>
+<p>when adding a string and number,java script will treat the number as a string.</p>
+<p id="demo"></p>
+<script>
+var x = 23 + "divya";
+var y = 12 + 3 + "bhavya";
+
+document.getElementById("demo").innerHTML = x + "<br>" + y;
+</script>
+<hr>.
+<h2>js types are dynamic</h2
+<p>JavaScript has dynamic types. This means that the same variable can be used to hold different data types:</p>
+<p id="demo1"></p>
+<script>
+var x;        // x is undefined
+x = 5;        //x is a number
+x = "fan";    //x is a string
+document.getElementById("demo1").innerHTML = x;
+</script>
+<hr>
+<h2>javascript strings</h2>
+<p>You can use quotes inside a string, as long as they don't match the quotes surrounding the string:</p>
+
+<p id="demo2"></p>
+<script>
+var r ="she is called 'divya'";
+var h ='honey is "sweet"';
+document.getElementById("demo2").innerHTML = r + "<br>" + h;
+</script>
+<hr>
+<h2>javascript numbers</h2>
+<ul>
+<li>
+Numbers can be written with, or without decimals.</li>
+<li>Extra large or extra small numbers can be written with scientific (exponential) notation.</li></ul>
+<p id ="demo4"></p>
+<script>
+var a = 56;
+var b = 56.89;
+var d = 2e-5;
+document.getElementById("demo4").innerHTML = a + "<br>" + b + "<br>" + " <br>" + d;
+</script>
+<hr>
+<h2>JavaScript Booleans</h2>
+
+<p>Booleans can have two values: true or false:</p>
+
+<p id="demo9"></p>
+<script>
+var o = 5;
+var p = 5;
+var q = 6;
+document.getElementById("demo9").innerHTML =
+(o == p) + "<br>" + (p == q);
+</script>
+<hr>
+<h2>JavaScript Arrays</h2>
+
+<p>Array indexes are zero-based, which means the first item is [0].</p>
+
+<p id="demos"></p>
+
+<script>
+var names = ["divya","Visali","Bhuvan","hari"];
+document.getElementById("demos").innerHTML = names[3];
+</script>
+<hr>
+<h2>JavaScript Objects</h2>
+<p id="dem"></p>
+<script>
+var per = {
+  firstName : "madireddy",
+  lastName  : "Divya",
+  age     : 19,
+  rollnum  : 38110286
+};
+document.getElementById("dem").innerHTML =
+per.lastName + " is " + per.age + " years old.";
+</script>
+<hr>
+<h2>JavaScript typeof</h2>
+<p>The typeof operator returns the type of a variable or an expression.</p>
+
+<p id="dot"></p>
+
+<script>
+var e;
+document.getElementById("dot").innerHTML = e + "<br>" +
+typeof 0 + "<br>" + 
+typeof 314 + "<br>" +
+typeof "divya";
+</script>
+<hr>
+<h2>empty values</h2>
+<p>An empty string has both a legal value and a type:</p>
+<p id="demo"></p>
+<script>
+var car = "";
+document.getElementById("demo").innerHTML =
+"The value is: " +
+car + "<br>" +
+"The type is: " + typeof car;
+</script>
+<hr>
+<h2>undefined and null</h2>
+<p>Undefined and null are equal in value but different in type:</p>
+<p id="dear"></p>
+<script>
+document.getElementById("dear").innerHTML =
+typeof undefined + "<br>" +
+typeof null + "<br><br>" +
+(null === undefined) + "<br>" +
+(null == undefined);
+</script>
+</body>
+</html>
